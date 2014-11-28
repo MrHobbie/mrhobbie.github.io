@@ -4,6 +4,10 @@ layout: default
 ---
 
 
-Proin eleifend libero accumsan felis luctus nec consectetur purus commodo. Phasellus sodales est nec massa imperdiet commodo. Maecenas risus nulla, placerat vel vestibulum vel, dapibus quis libero.
+## November 27, 2014
 
-Donec libero libero, bibendum non condimentum ac, ullamcorper at sapien. Duis feugiat urna vel justo cursus facilisis. Vivamus ligula dui, convallis a varius vitae, facilisis eget magna.
+Now that my Portfolio site is complete, I am working away on a number of blog topics.
+
+Check back in the next few days.
+
+John C.Hobson
