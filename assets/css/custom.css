@@ -65,20 +65,18 @@ hr {
 .navbar-nav.nav-text-light > li.active > a {
   border-bottom-color: #1f3553;
 }
-.navbar-default .navbar-toggle {
-  border-color: #1f3553;
+.navbar-toggle {
+  border-color: ##646464;
+  background-color: #646464;
 }
-.navbar-default .navbar-toggle {
-  background-color: #1f3553;
+.navbar-toggle .icon-bar {
+  background-color: #fff;
 }
-.navbar-default .navbar-toggle .icon-bar {
-  background-color: #c0af81;
+.navbar-toggle:hover,
+.navbar-toggle:focus {
+  background-color: #646464;
 }
-.navbar-default .navbar-toggle:hover,
-.navbar-default .navbar-toggle:focus {
-  background-color: #1f3553;
-}
-.navbar-fixed-bottom {
+.navbar-fixed-top {
   background-color: #fff;
 }
 /* navbar media queries */
@@ -130,6 +128,7 @@ hr {
 
 #footer {
   text-align: center;
+  background-color: #fff;
 }
 .social-icon li {
   margin-left: 5px;
