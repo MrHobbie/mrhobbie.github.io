@@ -30,6 +30,6 @@ After a couple more attempts, there were a number of changes, primarily in funct
 
 One thing that really stood out for me, was the need for design capabilities. I realized that I didn't have an eye for design even though I certainly knew what I liked or didn't like. I decided to purchase a UI kit, which is similar to hiring a UI designer. More on that in a related post.
 
-Having a pre-built website is a great start, but you still need to make it your own and of course, fill it with your content. Having read a number of portfolio sites, I had a good idea of what was included. The result it what is posted, and I am really pleased with how it has turned out. Patience and determination are key.
+Having a pre-built website is a great start, but you still need to make it your own and of course, fill it with your content. Having read a number of portfolio sites, I had a good idea of what was included. The result is now what is [posted](http://jchobsononline.ca). I am really pleased with how it has all turned out. Patience and determination are key.
 
-There were a number of challenges to writing a portfolio website, but the biggest one, was getting my head in the game. Yes, the technology is new, but not a great deal different than other programming tools I have used. With experience comes knowledge, but also the knowing there is still so much to learn. The journey continues ....
+There were a number of challenges in writing a portfolio website, but the biggest one, was getting my head in the game. Yes, the technology is new, but not a great deal different than other programming tools I have used. With experience comes knowledge, but also the knowing there is still so much to learn. The journey continues ....
