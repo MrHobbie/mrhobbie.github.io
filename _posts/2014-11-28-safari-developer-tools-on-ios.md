@@ -1,9 +1,9 @@
 ---
 title: Using Safari Developer Tools on iOS
-layout: post
+layout: default
 comments: true
 ---
 
-# {{ page.title }}
+## {{ page.title }}
 
 ### Things I have learned that might help you

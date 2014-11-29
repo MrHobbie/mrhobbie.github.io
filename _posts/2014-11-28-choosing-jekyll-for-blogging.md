@@ -1,6 +1,6 @@
 ---
 title: Choosing Jekyll for Blogging
-layout: post
+layout: default
 comments: true
 ---
 

@@ -1,9 +1,9 @@
 ---
 title: Using Google Sheets as a JSON Data Source
-layout: post
+layout: default
 comments: true
 ---
 
-# {{ page.title }}
+## {{ page.title }}
 
 ### Things I have learned that might help you
