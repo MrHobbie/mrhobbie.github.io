@@ -11,7 +11,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
 }
 a {
-  color: #bcbcbc;
+  color: #6c6c6e;
   text-decoration: none;
 }
 a:hover,
@@ -61,6 +61,7 @@ hr {
 }
 .navbar-nav.nav-text-light > li > a:hover{
   border-bottom-color: #1f3553;
+  background-color: #646464;
 }
 .navbar-nav.nav-text-light > li.active > a {
   border-bottom-color: #1f3553;
@@ -215,4 +216,34 @@ hr {
 }
 .related-posts li a:hover small {
   color: inherit;
+}
+/* Block quotes */
+blockquote:before {
+  display: block;
+  content: "\201C";
+  font-size: 80px;
+  position: absolute;
+  left: -20px;
+  top: -20px;
+  color: #7a7a7a;
+}
+blockquote {
+  /*font-family: Georgia, serif;*/
+  font-size: 18px;
+  font-style: italic;
+  max-width: 500px;
+  margin: 0.25em 0;
+  padding: 0.25em 40px;
+  line-height: 1.45;
+  position: relative;
+  color: #383838;
+}
+@media screen and (max-width: 480px) {
+    blockquote:before {
+      font-size: 50px;
+      left: 0;
+    }
+    blockquote {
+      font-size: 14px;
+    }
 }
