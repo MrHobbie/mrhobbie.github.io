@@ -1,7 +1,7 @@
 ---
 title: Writing a Portfolio Website
 layout: default
-comments: true
+comments: false
 ---
 
 ## Writing a Portfolio Website
