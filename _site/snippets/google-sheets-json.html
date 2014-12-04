@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" >
+  <title>Development Notes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Snippet Respository" />
+  <link href="/assets/css/bootstrap.css" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="/assets/css/font-awesome.css"> -->
+  <link href="/assets/css/custom.css" rel="stylesheet" >
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css">
+  <!-- <link href='http://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700' rel='stylesheet' type='text/css'> -->
+
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <!-- Fav and touch icons -->
+  <!-- <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/ico/apple-touch-icon-144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/ico/apple-touch-icon-114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/ico/apple-touch-icon-72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="/assets/ico/apple-touch-icon-57-precomposed.png">
+  <link rel="shortcut icon" href="/assets/ico/favicon.png"> -->
+
+  <script src="/assets/js/jquery-2.1.1.js"></script>
+  <script src="/assets/js/bootstrap.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!--<script src="/assets/js/custom.js"></script>-->
+
+</head>
+
+
+<body>
+  <div class="container">
+    
+      <a href="index.html">Back to Snippet Index</a>
+    
+  <h2 id="google-sheets-json-data">Google Sheets JSON Data</h2>
+
+<h3 id="html-table-code">HTML Table Code</h3>
+<pre><code class="html">
+&lt;section class="table-responsive" id="specDetails"&gt;
+&lt;h2&gt;Specification Details&lt;/h2&gt;
+  &lt;table id="datadetails"&gt;
+  &lt;/table&gt;
+&lt;script id="spec-template" type="text/template"&gt;
+&#123;&#123;#entry&#125;&#125;
+  &lt;tr&gt;
+      &lt;td class="col1"&gt;&#123;&#123;gsx$desc1.$t&#125;&#125;&lt;/td&gt;
+      &lt;td class="bd col2"&gt;&#123;&#123;gsx$data1.$t&#125;&#125;&lt;/td&gt;
+      &lt;td class="col3"&gt;&#123;&#123;gsx$desc2.$t&#125;&#125;&lt;/td&gt;
+      &lt;td class="bd col4"&gt;&#123;&#123;gsx$data2.$t&#125;&#125;&lt;/td&gt;
+      &lt;td class="col5"&gt;&#123;&#123;gsx$desc3.$t&#125;&#125;&lt;/td&gt;
+      &lt;td class="bd col6"&gt;&#123;&#123;gsx$data3.$t&#125;&#125;&lt;/td&gt;
+  &lt;/tr&gt;
+&#123;&#123;/entry&#125;&#125;
+&lt;/script&gt;
+&lt;/section&gt;
+</code></pre>
+
+<h3 id="javascript-code">Javascript Code</h3>
+<pre><code class="javascript">
+$(function () {  
+  $.getJSON("https://spreadsheets.google.com/feeds/list/1UaWeCOYaX6LUaxw-3EMkcxDd_tJcHVbivQzbou7XETI/1/public/values?hl=en_US&amp;alt=json", function( data) {
+    var template = $('#spec-template').html();
+    var info = Mustache.to_html(template, data.feed);
+    $('#datadetails').html(info);
+    });
+    });
+    </code></pre>
+
+<h3 id="css-code">CSS code</h3>
+<pre><code class="css">
+#specDetails {
+  height: 100%;
+}
+#specDetails h2 {
+  margin: 70px 0 5px 20px;
+}
+#specDetails #datadetails {
+  margin: 0 20px 0 20px;
+}
+#specDetails .col1,
+#specDetails .col3,
+#specDetails .col5 {
+  width: 11%;
+}
+#specDetails .col2,
+#specDetails .col4,
+#specDetails .col6 {
+  width: 22%;
+}
+#specDetails td {
+  text-align: right;
+  font-size: .9em;
+  padding: 4px 4px 4px 4px;
+  border: 1px solid #bbb;
+}
+#specDetails td.bd {
+  font-weight: 600;
+  text-align: center;
+}
+</code></pre>
+
+<p>– end of document –</p>
+
+
+</div>
+</body>
+
+</html>

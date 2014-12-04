@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include snippet-head.html %}
+
+<body>
+  <div class="container">
+    {% if page.title <> 'Snippets Index'%}
+      <a href="index.html">Back to Snippet Index</a>
+    {% endif %}
+  {{ content }}
+
+</div>
+</body>
+
+</html>

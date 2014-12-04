@@ -1,0 +1,16 @@
+---
+title: Snippets Index
+layout: snippet
+---
+
+<h2>Snippets Index</h2>
+
+    {% for page in site.collections.snippets.docs %}
+
+      {% if page.title <> 'Snippets Index'%}
+
+        <h4><a href="{{ page.url }}">{{ page.title }}</a></h4>
+
+      {% endif %}
+
+    {% endfor %}
