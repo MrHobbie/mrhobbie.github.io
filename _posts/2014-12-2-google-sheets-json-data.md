@@ -70,7 +70,7 @@ For Mustache, we specify the code template #spec-template and then the output id
 
 Mustache then converts data into HTML and loops through the JSON object; the HTML page code looks like:
 
-![Alt "Google Sheets - Share"](/assets/images/2014-12-2/googleSheets-4.png "Google Sheets - Share")
+{% gist 824af874db3af3a932c1 %}
 
 To see the complete picture, the CSS code for the table:
 <pre><code class="css">
