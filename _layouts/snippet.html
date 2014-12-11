@@ -5,12 +5,14 @@
 
 <body>
   <div class="container">
-    {% if page.title <> 'Snippets Index'%}
-      <a href="index.html">Back to Snippet Index</a>
-    {% endif %}
-  {{ content }}
 
-</div>
+    <div class="col-md-8 col-md-offset-2">
+    {% if page.title <> 'Snippets Index'%}
+    <a href="index.html" class="pull-left" style="padding-bottom: 20px;">Back to Snippet Index</a>
+    {% endif %}
+      {{ content }}
+    </div>
+  </div>
 </body>
 
 </html>
