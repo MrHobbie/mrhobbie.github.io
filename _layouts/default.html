@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-{{ url }}{% include head.html %}
+{{ site.url }}{% include head.html %}
 
 <body>
 
@@ -15,13 +15,13 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a href="index.html" class="navbar-brand">
+        <a href="{{ site.url }}/index.html" class="navbar-brand">
           <img src="/assets/images/devices-header.png" alt="Loop Logo" />
         </a>
       </div>
       <nav class="navbar-collapse collapse" id="main-nav" role="navigation">
         <ul class="nav navbar-nav nav-text-light">
-          <li class="active"><a href="/index.html">BLOG HOME</a>
+          <li class="active"><a href="{{ site.url }}/index.html">BLOG HOME</a>
           </li>
         </ul>
       </nav>
@@ -35,12 +35,12 @@
         <article class="post">
           {{ content }}
         </article>
-        {{ url }}{% include related-posts.html %}
-        {{ url }}{% include comments.html %}
+        {{ site.url }}{% include related-posts.html %}
+        {{ site.url }}{% include comments.html %}
       </div>
     </div>
 
-    {{ url }}{% include footer.html %}
+    {{ site.url }}{% include footer.html %}
   </div>
   <!-- main container div -->
 
