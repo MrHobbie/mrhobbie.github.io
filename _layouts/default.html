@@ -15,13 +15,13 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a href="{{ url }}/index.html" class="navbar-brand">
+        <a href="http://blog.jchobsononline.ca/index.html" class="navbar-brand">
           <img src="/assets/images/devices-header.png" alt="Loop Logo" />
         </a>
       </div>
       <nav class="navbar-collapse collapse" id="main-nav" role="navigation">
         <ul class="nav navbar-nav nav-text-light">
-          <li class="active"><a href="{{ url }}/index.html">BLOG HOME</a>
+          <li class="active"><a href="http://blog.jchobsononline.ca/index.html">BLOG HOME</a>
           </li>
         </ul>
       </nav>
@@ -36,11 +36,11 @@
           {{ content }}
         </article>
         {{ site.url }}{% include related-posts.html %}
-        {{ site.url }}{% include comments.html %}
+        {% include comments.html %}
       </div>
     </div>
 
-    {{ site.url }}{% include footer.html %}
+    {% include footer.html %}
   </div>
   <!-- main container div -->
 
