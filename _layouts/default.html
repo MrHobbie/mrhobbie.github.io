@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-{% include head.html %}
+{{ url }}{% include head.html %}
 
 <body>
 
@@ -35,12 +35,12 @@
         <article class="post">
           {{ content }}
         </article>
-        {% include related-posts.html %}
-        {% include comments.html %}
+        {{ url }}{% include related-posts.html %}
+        {{ url }}{% include comments.html %}
       </div>
     </div>
 
-    {% include footer.html %}
+    {{ url }}{% include footer.html %}
   </div>
   <!-- main container div -->
 
